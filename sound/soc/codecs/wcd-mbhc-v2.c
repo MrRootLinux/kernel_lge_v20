@@ -121,8 +121,8 @@ static void lge_set_sdev_name(struct wcd_mbhc *mbhc, int status)
     /*
      * temporary code before applying tunning values of MBHC
      */
-    if( mbhc->zl == 268435454 )
-        mbhc->zl = 0;
+	if( mbhc->zl == 268435454 )
+		mbhc->zl = 0;
 
 	if ((mbhc->mbhc_cfg->detect_extn_cable) && (status == SND_JACK_LINEOUT))
 		mbhc->sdev.name = LGE_SWITCH_NAME_AUX_HIDDEN;
